@@ -149,7 +149,7 @@
 
 
 
-.submit:active{
+.submit:hover{
   padding-top: 2px;
     box-shadow: 0px 3px 0px 0px #dfe5eb;
 }
