@@ -16,7 +16,7 @@ function App() {
     const i =input;
     setInput("");
     setSpin(true);
-    await axios.post(process.env.React_App_GPT,{prompt:i}).then(res=>{
+    await axios.post('https://rgpt.vercel.app/',{prompt:i}).then(res=>{
       setChatlog([...chatlog,{user:"user",message:`${i}`},{user:"gpt",message:`${res.data}`}]);
         setSpin(false);
     })
